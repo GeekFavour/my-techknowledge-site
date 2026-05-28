@@ -1,0 +1,94 @@
+site_name: GeekFavour | Tech Knowledge Base
+site_url: https://geekfavour.qzz.io
+site_description: Infrastructure and platform engineering guides, runbooks, troubleshooting references for Azure, Cloudflare, Linux, DevOps, Networking and Security.
+site_author: GeekFavour
+
+repo_url: https://github.com/GeekFavour/my-techknowledge-site
+repo_name: GeekFavour/my-techknowledge-site
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  font:
+    text: IBM Plex Sans
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tooltips
+
+plugins:
+  - search:
+      lang: en
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - def_list
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Knowledge Base:
+    - kb/index.md
+    - Azure: kb/azure/index.md
+    - Cloudflare: kb/cloudflare/index.md
+    - DevOps: kb/devops/index.md
+    - Linux: kb/linux/index.md
+    - Networking: kb/networking/index.md
+    - Security: kb/security/index.md
+    - Monitoring: kb/monitoring/index.md
+    - Automation: kb/automation/index.md
+  - Troubleshooting: troubleshooting/index.md
+  - Runbooks: runbooks/index.md
+  - Scripts: scripts/index.md
+  - About: about.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/GeekFavour
+
+copyright: Copyright &copy; 2024 GeekFavour
