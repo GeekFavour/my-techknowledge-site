@@ -10,5 +10,10 @@ Take a look around, explore freely, and hopefully you’ll find exactly what you
 
 Happy troubleshooting.
 
-YouTube - https://youtube.com/@geekfavour6010?si=6vRqId1qDLZjYjuv
-Mail - geekfavour@gmail.com
+🎥 Follow along on YouTube:
+GeekFavour YouTube Channel
+
+📩 Reach out anytime:
+geekfavour@gmail.com
+
+Happy troubleshooting.
