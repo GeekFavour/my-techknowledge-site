@@ -1,4 +1,4 @@
-# Welcome to GeekFavour | Tech Knowledge Base
+# Welcome to GeekFavour
 
 Building, breaking, fixing, and figuring things out.
 
