@@ -1,4 +1,4 @@
-# Knowledge Base: Expanding Disk Size on a Linux VM (Ubuntu) After Virtual Disk Resize
+# Expanding Disk Size on a Linux VM (Ubuntu) After Virtual Disk Resize
 
 ## Overview
 
