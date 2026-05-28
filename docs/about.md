@@ -1,5 +1,4 @@
 # About
-# About
 
 Hey, I’m Bonifas 👋
 
