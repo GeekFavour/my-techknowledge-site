@@ -69,26 +69,26 @@ markdown_extensions:
   - toc:
       permalink: true
 
-nav:
-  - Home: index.md
-  - Knowledge Base:
-    - kb/index.md
-    - Azure: kb/azure/index.md
-    - Cloudflare: kb/cloudflare/index.md
-    - DevOps: kb/devops/index.md
-    - Linux: kb/linux/index.md
-    - Networking: kb/networking/index.md
-    - Security: kb/security/index.md
-    - Monitoring: kb/monitoring/index.md
-    - Automation: kb/automation/index.md
-  - Troubleshooting: troubleshooting/index.md
-  - Runbooks: runbooks/index.md
-  - Scripts: scripts/index.md
-  - About: about.md
+#nav:
+#  - Home: index.md
+#  - Knowledge Base:
+#    - kb/index.md
+#    - Azure: kb/azure/index.md
+#    - Cloudflare: kb/cloudflare/index.md
+#    - DevOps: kb/devops/index.md
+#    - Linux: kb/linux/index.md
+#    - Networking: kb/networking/index.md
+#    - Security: kb/security/index.md
+#    - Monitoring: kb/monitoring/index.md
+#    - Automation: kb/automation/index.md
+#  - Troubleshooting: troubleshooting/index.md
+#  - Runbooks: runbooks/index.md
+#  - Scripts: scripts/index.md
+#  - About: about.md
 
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/GeekFavour
 
-copyright: Copyright &copy; 2024 GeekFavour
+copyright: Copyright &copy; 2026 GeekFavour
