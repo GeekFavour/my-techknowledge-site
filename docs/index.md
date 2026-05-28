@@ -1,17 +1,11 @@
-# Welcome to MkDocs
+# Welcome to GeekFavour | Tech Knowledge Base
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Building, breaking, fixing, and figuring things out.
 
-## Commands
+Welcome to my little corner of the internet — a technical knowledge base built from hands-on work, curiosity, troubleshooting, and continuous learning.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+A small favour for geeks across the world… and maybe across the galaxy 🌍✨
 
-## Project layout
+Take a look around, explore freely, and hopefully you’ll find exactly what you came looking for.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Happy troubleshooting.
