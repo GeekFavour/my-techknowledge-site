@@ -35,7 +35,7 @@ I wanted a place to document everything I learn on the job — troubleshooting g
 | CDN + SSL | Cloudflare (built-in) | Free |
 | Search | MkDocs built-in | Free |
 | Source control | GitHub | Free |
-| Domain | Your own domain via Cloudflare DNS | Cost of domain only |
+| Domain | Your own domain via Cloudflare DNS | Free if you don't care about TLD |
 
 ---
 
