@@ -9,6 +9,9 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
+  custom_dir: overrides
+  logo: assets/logo.svg
+  favicon: assets/favicon.svg
   palette:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
@@ -40,6 +43,9 @@ theme:
     - content.code.annotate
     - content.tooltips
 
+extra_css:
+  - stylesheets/geekfavour.css
+
 plugins:
   - search:
       lang: en
@@ -69,26 +75,45 @@ markdown_extensions:
   - toc:
       permalink: true
 
-#nav:
-#  - Home: index.md
-#  - Knowledge Base:
-#    - kb/index.md
-#    - Azure: kb/azure/index.md
-#    - Cloudflare: kb/cloudflare/index.md
-#    - DevOps: kb/devops/index.md
-#    - Linux: kb/linux/index.md
-#    - Networking: kb/networking/index.md
-#    - Security: kb/security/index.md
-#    - Monitoring: kb/monitoring/index.md
-#    - Automation: kb/automation/index.md
-#  - Troubleshooting: troubleshooting/index.md
-#  - Runbooks: runbooks/index.md
-#  - Scripts: scripts/index.md
-#  - About: about.md
+nav:
+  - Home: index.md
+  - Knowledge Base:
+    - kb/index.md
+    - Linux & Systems:
+      - kb/linux/index.md
+      - Expand Disk Size: kb/linux/Ubuntu/expand-disk-size.md
+      - Multi-User SFTP Server: kb/linux/Ubuntu/sftp-server-ubuntu-multi-user.md
+    - Automation & Watchdogs:
+      - kb/automation/index.md
+      - SSL Expiry Checker: kb/automation/kb-ssl-cert-checker.md
+      - Linux Server Health Monitor: kb/automation/kb-linux-health-monitor.md
+      - Azure VM Bulk Health Check: kb/automation/kb-azure-vm-health-check.md
+    - Azure: kb/azure/index.md
+    - Cloudflare: kb/cloudflare/index.md
+    - DevOps: kb/devops/index.md
+    - Networking: kb/networking/index.md
+    - Security: kb/security/index.md
+    - Monitoring: kb/monitoring/index.md
+  - Troubleshooting:
+    - troubleshooting/index.md
+    - ServeRAID M5210 Firmware Rollback: troubleshooting/KT_ServeRAID_M5210_Firmware_Rollback.md
+    - Kubernetes OIDC Authentication Guide: troubleshooting/Kubernetes_OIDC_Authentication_Troubleshooting_Guide.md
+  - Products:
+    - GeekFavour IT Asset Manager: our-products/GeekFavour IT Asset Manager.md
+  - Runbooks: runbooks/index.md
+  - Scripts: scripts/index.md
+  - Architecture:
+    - How This Site Was Built: how-i-built-this-site/how-i-built-this-site.md
+  - About: about.md
 
 extra:
+  generator: false
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/GeekFavour
+    - icon: fontawesome/brands/youtube
+      link: https://youtube.com/@GeekFavour
+    - icon: fontawesome/solid/envelope
+      link: mailto:geekfavour@gmail.com
 
 copyright: Copyright &copy; 2026 GeekFavour

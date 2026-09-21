@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <defs>
+    <linearGradient id="gf-grad-primary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="50%" stop-color="#0ea5e9" />
+      <stop offset="100%" stop-color="#14b8a6" />
+    </linearGradient>
+    <linearGradient id="gf-grad-accent" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#2dd4bf" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Hexagonal Tech Badge -->
+  <path d="M24 3 L42 13.5 V34.5 L24 45 L6 34.5 V13.5 Z" 
+        stroke="url(#gf-grad-primary)" 
+        stroke-width="2.5" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        fill="#0b1120" 
+        fill-opacity="0.95" />
+
+  <!-- Inner Tech Circuit Lines -->
+  <path d="M24 10 L35 16.5 V26 L24 32.5 L13 26 V16.5 Z" 
+        stroke="url(#gf-grad-accent)" 
+        stroke-width="1.5" 
+        stroke-dasharray="2 3"
+        stroke-linecap="round" 
+        fill="none" 
+        opacity="0.5" />
+
+  <!-- Stylized G-F Monogram Core -->
+  <path d="M29 17 C26.5 15.2 21.5 15.2 18.5 18 C15.5 21 15.5 27 18.5 30 C21.5 33 26.5 33 29 30.5 V24 H23" 
+        stroke="url(#gf-grad-primary)" 
+        stroke-width="3" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        fill="none" />
+
+  <!-- Forward Acceleration Chevron / Terminal Node -->
+  <path d="M28 20 L33 24 L28 28" 
+        stroke="url(#gf-grad-accent)" 
+        stroke-width="2.5" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+
+  <!-- Energy Pulse Nodes -->
+  <circle cx="34" cy="14" r="2.2" fill="#38bdf8" />
+  <circle cx="14" cy="34" r="2" fill="#2dd4bf" />
+</svg>

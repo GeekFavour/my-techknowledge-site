@@ -1,0 +1,331 @@
+/* ==========================================================================
+   GeekFavour — Modern Developer Portal & Technical Knowledge Base
+   Pure Presentation Layer Design System (Zero Markdown Content Modifications)
+   ========================================================================== */
+
+/* --- Custom Variables & Tokens --- */
+:root {
+  --gf-primary: #0d9488;
+  --gf-primary-hover: #14b8a6;
+  --gf-cyan: #06b6d4;
+  --gf-sky: #0284c7;
+  --gf-glow: rgba(6, 182, 212, 0.15);
+  --gf-card-bg: #ffffff;
+  --gf-card-border: #e2e8f0;
+  --gf-card-hover-border: #0ea5e9;
+  --gf-card-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+  --gf-card-hover-shadow: 0 12px 30px -4px rgba(14, 165, 233, 0.15);
+  --gf-text-muted: #64748b;
+  --gf-radius-sm: 8px;
+  --gf-radius-md: 12px;
+  --gf-radius-lg: 16px;
+  --gf-font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+[data-md-color-scheme="slate"] {
+  --gf-bg-main: #090d16;
+  --gf-bg-surface: #0f172a;
+  --gf-card-bg: #111827;
+  --gf-card-border: #1e293b;
+  --gf-card-hover-border: #38bdf8;
+  --gf-card-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.35);
+  --gf-card-hover-shadow: 0 12px 32px -4px rgba(56, 189, 248, 0.2);
+  --gf-text-muted: #94a3b8;
+  --md-default-bg-color: #090d16;
+  --md-default-fg-color: #e2e8f0;
+  --md-code-bg-color: #0b1120;
+}
+
+[data-md-color-scheme="default"] {
+  --gf-bg-main: #f8fafc;
+  --gf-bg-surface: #ffffff;
+  --gf-card-bg: #ffffff;
+  --gf-card-border: #e2e8f0;
+  --gf-card-hover-border: #0284c7;
+  --gf-card-shadow: 0 4px 16px -2px rgba(15, 23, 42, 0.06);
+  --gf-card-hover-shadow: 0 12px 28px -4px rgba(2, 132, 199, 0.12);
+  --gf-text-muted: #64748b;
+  --md-default-bg-color: #f8fafc;
+  --md-default-fg-color: #0f172a;
+  --md-code-bg-color: #f1f5f9;
+}
+
+/* --- Header Polish & Glassmorphism --- */
+.md-header {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+[data-md-color-scheme="slate"] .md-header {
+  background-color: rgba(9, 13, 22, 0.85);
+  border-bottom: 1px solid rgba(30, 41, 59, 0.8);
+}
+
+[data-md-color-scheme="default"] .md-header {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.9);
+}
+
+.md-header__title {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 28px;
+  width: 28px;
+  transition: transform 0.25s ease;
+}
+
+.md-header__button.md-logo:hover img,
+.md-header__button.md-logo:hover svg {
+  transform: scale(1.08) rotate(-3deg);
+}
+
+/* --- Search Bar Modernization --- */
+.md-search__inner {
+  border-radius: var(--gf-radius-sm);
+}
+
+.md-search__form {
+  border-radius: var(--gf-radius-sm);
+  background-color: rgba(148, 163, 184, 0.12);
+  border: 1px solid transparent;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.md-search__form:focus-within {
+  border-color: var(--gf-cyan);
+  box-shadow: 0 0 0 3px var(--gf-glow);
+}
+
+/* --- Navigation Tabs --- */
+.md-tabs {
+  border-bottom: 1px solid var(--gf-card-border);
+}
+
+[data-md-color-scheme="slate"] .md-tabs {
+  background-color: #0b1120;
+}
+
+[data-md-color-scheme="default"] .md-tabs {
+  background-color: #f1f5f9;
+}
+
+.md-tabs__link {
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  opacity: 0.8;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.md-tabs__item--active .md-tabs__link {
+  opacity: 1;
+  font-weight: 600;
+  color: var(--gf-cyan) !important;
+}
+
+/* --- Sidebar Nav Polish --- */
+.md-nav__link {
+  border-radius: var(--gf-radius-sm);
+  padding: 4px 10px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.md-nav__link--active {
+  font-weight: 600;
+  color: var(--gf-cyan) !important;
+  background-color: rgba(6, 182, 212, 0.08);
+}
+
+/* --- Typography Hierarchy & Spacing --- */
+.md-typeset h1 {
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.25;
+}
+
+.md-typeset h2 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-top: 1.8em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--gf-card-border);
+}
+
+.md-typeset h3 {
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+/* --- Code Block Upgrades --- */
+.md-typeset pre > code {
+  font-family: var(--gf-font-mono);
+  font-size: 0.85em;
+  line-height: 1.6;
+  border-radius: var(--gf-radius-sm);
+}
+
+.md-typeset .highlight {
+  border-radius: var(--gf-radius-md);
+  border: 1px solid var(--gf-card-border);
+  box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 1.2em 0;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .highlight {
+  border-color: #1e293b;
+  background-color: #0b1120;
+}
+
+.md-typeset code {
+  font-family: var(--gf-font-mono);
+  border-radius: 4px;
+  padding: 0.15em 0.4em;
+}
+
+/* --- Admonitions (Callouts) --- */
+.md-typeset .admonition {
+  border-radius: var(--gf-radius-md);
+  border-left-width: 4px;
+  box-shadow: var(--gf-card-shadow);
+  border-top: 1px solid var(--gf-card-border);
+  border-right: 1px solid var(--gf-card-border);
+  border-bottom: 1px solid var(--gf-card-border);
+  overflow: hidden;
+}
+
+/* --- Tables --- */
+.md-typeset table:not([class]) {
+  border-radius: var(--gf-radius-md);
+  border: 1px solid var(--gf-card-border);
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  box-shadow: var(--gf-card-shadow);
+  margin: 1.5em 0;
+  width: 100%;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: rgba(148, 163, 184, 0.08);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--gf-card-border);
+}
+
+.md-typeset table:not([class]) td {
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--gf-card-border);
+}
+
+.md-typeset table:not([class]) tr:last-child td {
+  border-bottom: none;
+}
+
+/* ==========================================================================
+   Homepage Pure-CSS Modernization (Transforming Existing Content Visually)
+   ========================================================================== */
+
+/* Target the container on the homepage */
+.md-content:has(#welcome-to-geekfavour) {
+  padding-top: 10px;
+}
+
+/* Headline: Welcome to GeekFavour */
+#welcome-to-geekfavour {
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
+  background: linear-gradient(135deg, #0f172a 20%, #0284c7 60%, #0d9488 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-md-color-scheme="slate"] #welcome-to-geekfavour {
+  background: linear-gradient(135deg, #f8fafc 20%, #38bdf8 65%, #2dd4bf 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subheading badge: Building, breaking, fixing, and figuring things out. */
+#welcome-to-geekfavour + p {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  padding: 6px 18px;
+  border-radius: 9999px;
+  background: rgba(6, 182, 212, 0.1);
+  color: var(--gf-cyan);
+  border: 1px solid rgba(6, 182, 212, 0.25);
+  margin-bottom: 24px;
+}
+
+#welcome-to-geekfavour + p::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #22c55e;
+  box-shadow: 0 0 8px #22c55e;
+  margin-right: 10px;
+}
+
+/* Lead intro text */
+#welcome-to-geekfavour ~ p:nth-of-type(2) {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: var(--md-default-fg-color);
+  font-weight: 500;
+  max-width: 760px;
+}
+
+/* A small favour for geeks across the world... */
+#welcome-to-geekfavour ~ p:nth-of-type(3) {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--gf-text-muted);
+  font-style: italic;
+  padding-left: 14px;
+  border-left: 3px solid var(--gf-cyan);
+  margin: 18px 0;
+}
+
+/* Contact & Social lines on homepage */
+.md-content:has(#welcome-to-geekfavour) p:has(img[alt="Visitors"]) {
+  margin-top: 36px;
+  padding: 16px 20px;
+  border-radius: var(--gf-radius-md);
+  background-color: var(--gf-card-bg);
+  border: 1px solid var(--gf-card-border);
+  box-shadow: var(--gf-card-shadow);
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.md-content:has(#welcome-to-geekfavour) p:has(img[alt="Visitors"])::before {
+  content: "Live Traffic";
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--gf-text-muted);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #welcome-to-geekfavour {
+    font-size: 2.1rem;
+  }
+}

@@ -1,6 +1,21 @@
-# wrangler files
+# Build output
+site/
+.cache/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# Wrangler & environment
 .wrangler
 .dev.vars*
 !.dev.vars.example
 .env*
 !.env.example
+
+# OS artifacts
+.DS_Store
+Thumbs.db
